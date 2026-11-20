@@ -105,7 +105,7 @@ Compose parses the root JWT setting even for a single service, so first create a
 
 Passwords are hashed, cookies are HTTP-only and SameSite Strict, production cookies require HTTPS, inputs reject unknown fields, writes check origins, sessions expire in 30 minutes and are checked server-side, login is rate limited, and headers are set with Helmet. API responses include a generated request ID. No passwords or tokens are placed in localStorage.
 
-This is a knowledge implementation, not a production banking system. It does not claim regulatory compliance. Before handling real users or funds, additional work would include MFA, verified email and recovery, durable audit exports, distributed rate limiting, monitoring, backup/recovery, account lifecycle controls, and independent security and financial-system review. The current request rate limiter is process-local. The local temporary database and provided Docker network are development conveniences.
+This is a __knowledge implementation, not a production banking system__. It does not claim regulatory compliance. Before handling real users or funds, additional work would include MFA, verified email and recovery, durable audit exports, distributed rate limiting, monitoring, backup/recovery, account lifecycle controls, and independent security and financial-system review. The current request rate limiter is process-local. The local temporary database and provided Docker network are development conveniences.
 
 ## Project guide
 
